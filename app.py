@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Jun 11 22:34:20 2020
-@author: Krish Naik
+@author: Sandesh Hase
 """
 
 from __future__ import division, print_function
@@ -36,7 +35,7 @@ from werkzeug.utils import secure_filename
 app = Flask(__name__)
 
 # Model saved with Keras model.save()
-MODEL_PATH = 'model_inception.h5'
+MODEL_PATH = 'model_resnet50.h5'
 
 # Load your trained model
 model = load_model(MODEL_PATH)
